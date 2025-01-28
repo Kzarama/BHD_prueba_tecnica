@@ -1,0 +1,7 @@
+@if(type ==='submit') {
+<button type="submit" [class]="variant" [disabled]="disabled">
+  {{ text }}
+</button>
+} @else {
+<button (click)="onButtonClick()" [class]="variant">{{ text }}</button>
+}

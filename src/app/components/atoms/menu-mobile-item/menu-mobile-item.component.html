@@ -1,0 +1,10 @@
+<a [routerLink]="'/' + route" routerLinkActive="active"
+  ><img
+    [src]="
+      currentRoute === '/' + route
+        ? 'assets/icons/' + route + '_green.svg'
+        : 'assets/icons/' + route + '_gray.svg'
+    "
+    alt="{{ text }}"
+  /><span> {{ text }}</span></a
+>

@@ -1,0 +1,45 @@
+@import "../../../../styles/variables.scss";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.product_card {
+  margin: 0;
+  border-left: 6px solid $green_brand;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  &.card {
+    border-left: 6px solid $blue_light;
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    h3 {
+      font-size: 14px;
+      margin: 0;
+      color: $font_color;
+    }
+  }
+
+  &_description {
+    font-size: 10px;
+    color: $font_color_secondary;
+  }
+
+  .value-small {
+    font-size: 10px;
+  }
+
+  .value-big {
+    font-size: 24px;
+  }
+}

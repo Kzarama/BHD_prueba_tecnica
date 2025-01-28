@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  max-width: 375px;
+  height: 812px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "TrebuchetMS";
+}
+
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url(assets/fonts/TrebuchetMS.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}

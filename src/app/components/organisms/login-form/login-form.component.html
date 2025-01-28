@@ -1,0 +1,22 @@
+<form class="login-form" (ngSubmit)="handleSubmit()" [formGroup]="profileForm">
+  <app-input>
+    <input
+      type="text"
+      placeholder="Documento de identidad"
+      formControlName="user"
+    />
+  </app-input>
+  <app-input type="password">
+    <input
+      type="password"
+      placeholder="Contraseña"
+      formControlName="password"
+    />
+  </app-input>
+  <app-switch text="Recuerda mi usuario" />
+  <app-button
+    type="submit"
+    text="INICIAR SESION"
+    [disabled]="!profileForm.valid"
+  />
+</form>

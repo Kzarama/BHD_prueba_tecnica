@@ -1,0 +1,12 @@
+<app-layout-account variant="white" title="Mis productos">
+  <div class="dashboard">
+    @if (userData) {
+      @if (userData.accounts.length > 0){
+      <app-product-section [productData]="userData.accounts" />
+      }
+      @if (userData.cards.length > 0){
+      <app-product-section variant="card" [productData]="userData.cards" />
+      }
+    }
+  </div>
+</app-layout-account>

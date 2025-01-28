@@ -1,0 +1,20 @@
+<section class="demo">
+  <div class="demo_content">
+    @if (step === 1){
+    <span>Puedes ver tus productos</span>
+    <img src="assets/images/slide_1.svg" alt="" />
+    } @if (step === 2){
+    <span>Ahorra tiempo realizando transacciones de forma rápida y segura</span>
+    <img src="assets/images/slide_2.svg" alt="" />
+    } @if (step === 3){
+    <span>Aprovecha las ofertas que tenemos para ti</span>
+    <img src="assets/images/slide_3.svg" alt="" />
+    }
+
+    <div>stepper</div>
+  </div>
+
+  <div class="next_button">
+    <app-button (action)="nextStep()" text="Continuar" variant="link" />
+  </div>
+</section>

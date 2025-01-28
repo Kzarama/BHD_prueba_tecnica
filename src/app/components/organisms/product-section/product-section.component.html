@@ -1,0 +1,19 @@
+<section>
+  @if (variant === 'account'){
+  <h2 class="product_section_title">Cuentas ({{ productData.length }})</h2>
+  } @else {
+  <h2
+    [class]="
+      variant === 'card'
+        ? 'product_section_title card'
+        : 'product_section_title'
+    "
+  >
+    Tarjetas ({{ productData.length }})
+  </h2>
+  }
+
+  @for (data of productData; track data.id) {
+  <app-product-card [data]="data" [variant]="variant" />
+  }
+</section>

@@ -1,0 +1,13 @@
+<div class="login-bg">
+  <app-layout />
+
+  <div class="logo" type="button" (click)="toggleShowDemo()">
+    <app-logo />
+  </div>
+
+  <app-login-form (formData)="login($event)" />
+
+  @if (showDemo){
+  <app-demo (cerrar)="toggleShowDemo()" />
+  }
+</div>

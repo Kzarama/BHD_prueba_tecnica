@@ -1,0 +1,17 @@
+@import "../../../../styles/variables.scss";
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .product_section_title {
+    margin: 0;
+    color: $green_brand;
+    font-size: 14px;
+
+    &.card {
+      color: $blue_light;
+    }
+  }
+}

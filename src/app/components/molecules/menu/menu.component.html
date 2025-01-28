@@ -1,0 +1,68 @@
+<div class="bg-transparent">
+  <aside #modalContent [class]="isAnimating ? 'menu fade-in' : 'menu fade-out'">
+    @if (isAuthenticated){
+    <div class="user">
+      <div class="user_photo"></div>
+      <span>{{ userData?.name }}</span>
+    </div>
+    }@else {
+    <app-logo />
+    }
+
+    <hr class="header_separator" />
+
+    @if (isAuthenticated){
+    <ul class="menu_list">
+      <li>
+        <a routerLink="/dashboard"
+          ><img src="assets/icons/dashboard_green.svg" alt="dashboard" />Mis
+          productos</a
+        >
+      </li>
+      <li>
+        <a routerLink="/transactions"
+          ><img
+            src="assets/icons/transactions_green.svg"
+            alt="Transacciones"
+          />Transacciones</a
+        >
+      </li>
+      <li>
+        <a routerLink="/offers"
+          ><img src="assets/icons/offers_green.svg" alt="Ofertas" />Ofertas</a
+        >
+      </li>
+      <li>
+        <a routerLink="/configuration"
+          ><img
+            src="assets/icons/configuration_green.svg"
+            alt="Configuración"
+          />Configuración</a
+        >
+      </li>
+    </ul>
+
+    <hr class="options_separator" />
+    }
+    <ul class="menu_list">
+      <li>
+        <a routerLink="/contact"
+          ><img src="assets/icons/contact.svg" alt="Contacto" />Contacto</a
+        >
+      </li>
+      <li>
+        <a routerLink="/branches"
+          ><img src="assets/icons/branches.svg" alt="Sucursales" />Sucursales</a
+        >
+      </li>
+    </ul>
+
+    @if (isAuthenticated){
+    <app-button
+      class="bottom-button"
+      variant="border"
+      text="CERRAR SESIÓN"
+      (action)="handleLogout()"
+    />}
+  </aside>
+</div>

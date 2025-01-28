@@ -1,0 +1,34 @@
+<a [routerLink]="'/product_detail/' + data.id">
+  <section
+    [class]="variant === 'account' ? 'product_card' : 'product_card card'"
+  >
+    <div class="product_card_title">
+      <img
+        [src]="
+          variant === 'account'
+            ? 'assets/icons/dashboard_gray.svg'
+            : 'assets/icons/card_gray.svg'
+        "
+        alt="icon product"
+      />
+      <h3>{{ data.title }}</h3>
+    </div>
+
+    @let valuePipe = data.value | currency;
+    <div>
+      <span class="value-small">RD$ </span>
+      <span class="value-big">{{ valuePipe.integer }}</span
+      ><span class="value-small">.{{ valuePipe.decimal }}</span>
+    </div>
+
+    @if (data.value2){ @let valuePipe2 = data.value2 | currency;
+    <div>
+      <span class="value-small">US$ </span>
+      <span class="value-big">{{ valuePipe2.integer }}</span
+      ><span class="value-small">.{{ valuePipe2.decimal }}</span>
+    </div>
+    }
+
+    <span class="product_card_description">{{ data.description }} </span>
+  </section>
+</a>

@@ -1,14 +1,15 @@
 import { Routes } from '@angular/router';
-import { BranchesComponent } from './components/pages/branches/branches.component';
-import { ConfigurationComponent } from './components/pages/configuration/configuration.component';
-import { ContactComponent } from './components/pages/contact/contact.component';
-import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
-import { LoginComponent } from './components/pages/login/login.component';
-import { NotFoundComponent } from './components/pages/not-found/not-found.component';
-import { OffersComponent } from './components/pages/offers/offers.component';
-import { TransactionsComponent } from './components/pages/transactions/transactions.component';
-import { authGuard } from './guards/auth.guard';
-import { ProductDetailComponent } from './components/pages/product-detail/product-detail.component';
+
+import { authGuard } from '@/core/guards/auth.guard';
+import { BranchesComponent } from '@/domains/branches/branches.component';
+import { ConfigurationComponent } from '@/domains/configuration/configuration.component';
+import { ContactComponent } from '@/domains/contact/contact.component';
+import { DashboardComponent } from '@/domains/products/ui/pages/dashboard/dashboard.component';
+import { OffersComponent } from '@/domains/products/ui/pages/offers/offers.component';
+import { ProductDetailComponent } from '@/domains/products/ui/pages/product-detail/product-detail.component';
+import { TransactionsComponent } from '@/domains/products/ui/pages/transactions/transactions.component';
+import { LoginComponent } from '@/domains/users/ui/pages/login/login.component';
+import { NotFoundComponent } from '@/shared/ui/pages/not-found/not-found.component';
 
 export const routes: Routes = [
   {

@@ -1,4 +1,4 @@
-import { IUserData } from 'interfaces/user';
+import { IUserData } from 'app/core/interfaces/user';
 
 export const userData: IUserData = {
   name: 'Juan Perez',

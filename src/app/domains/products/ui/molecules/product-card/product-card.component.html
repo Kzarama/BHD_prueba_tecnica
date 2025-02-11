@@ -4,12 +4,14 @@
   >
     <div class="product_card_title">
       <img
-        [src]="
+        [ngSrc]="
           variant === 'account'
             ? 'assets/icons/dashboard_gray.svg'
             : 'assets/icons/card_gray.svg'
         "
         alt="icon product"
+        width="40"
+        height="40"
       />
       <h3>{{ data.title }}</h3>
     </div>

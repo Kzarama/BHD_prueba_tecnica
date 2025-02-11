@@ -1,18 +1,18 @@
 @if (variant === 'transparent') {
 <button class="hamburguer_menu" (click)="toggleActive()">
-  <img src="assets/icons/menu.svg" alt="menu" />
+  <img ngSrc="assets/icons/menu.svg" alt="menu" width="25" height="19" />
 </button>
 } @else {
 <header>
   <button class="hamburguer_menu--white" (click)="toggleActive()">
-    <img src="assets/icons/menu.svg" alt="menu" />
+    <img ngSrc="assets/icons/menu.svg" alt="menu" width="25" height="19" />
   </button>
 
   <h1>{{ title }}</h1>
 
   <hr />
 </header>
-} 
+}
 
 @if (isActive) {
 <app-menu [isAnimating]="isAnimating" (cerrar)="toggleActive()" />

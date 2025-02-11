@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-header',
-  imports: [MenuComponent],
+  imports: [MenuComponent, NgOptimizedImage],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

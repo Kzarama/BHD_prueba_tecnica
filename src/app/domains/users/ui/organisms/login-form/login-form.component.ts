@@ -6,8 +6,8 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { IUserDataLogin } from 'app/core/interfaces/user';
 import { ButtonComponent } from '@/shared/ui/atoms/button/button.component';
+import { IUserDataLogin } from 'app/core/interfaces/user';
 import { InputComponent } from '../../atoms/input/input.component';
 import { SwitchComponent } from '../../atoms/switch/switch.component';
 

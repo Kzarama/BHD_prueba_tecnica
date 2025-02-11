@@ -1,0 +1,7 @@
+<span>{{ data.message }}</span>
+
+@if (data.buttonText){
+<button mat-flat-button (click)="snackBarRef.dismiss()">
+  {{ data.buttonText }}
+</button>
+}

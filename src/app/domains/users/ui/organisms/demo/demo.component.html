@@ -1,19 +1,30 @@
 <section class="demo">
   <div class="demo_content">
-    @switch (step) {
-      @case (2) {
-        <span>Ahorra tiempo realizando transacciones de forma rápida y segura</span>
-        <img src="assets/images/slide_2.svg" alt="slide_2" />
-      }
-      @case (3) {
-        <span>Aprovecha las ofertas que tenemos para ti</span>
-        <img src="assets/images/slide_3.svg" alt="slide_3" />
-      }
-      @default {
-        <span>Puedes ver tus productos</span>
-        <img src="assets/images/slide_1.svg" alt="slide_1" />
-      }
-    }
+    @switch (step) { @case (2) {
+    <span>Ahorra tiempo realizando transacciones de forma rápida y segura</span>
+    <img
+      ngSrc="assets/images/slide_2.svg"
+      alt="slide_2"
+      width="155"
+      height="155"
+    />
+    } @case (3) {
+    <span>Aprovecha las ofertas que tenemos para ti</span>
+    <img
+      ngSrc="assets/images/slide_3.svg"
+      alt="slide_3"
+      width="155"
+      height="155"
+    />
+    } @default {
+    <span>Puedes ver tus productos</span>
+    <img
+      ngSrc="assets/images/slide_1.svg"
+      alt="slide_1"
+      width="155"
+      height="155"
+    />
+    } }
 
     <div>stepper</div>
   </div>

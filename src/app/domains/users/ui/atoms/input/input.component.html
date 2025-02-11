@@ -1,8 +1,13 @@
 <div class="input-content">
   @if (type === 'text') {
-  <img src="assets/icons/user.svg" alt="" />
+  <img ngSrc="assets/icons/user.svg" alt="user" width="15" height="15" />
   } @else {
-  <img src="assets/icons/password.svg" alt="" />
+  <img
+    ngSrc="assets/icons/password.svg"
+    alt="password"
+    width="15"
+    height="15"
+  />
   }
 
   <ng-content />

@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 import { ButtonComponent } from '@/shared/ui/atoms/button/button.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-demo',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, NgOptimizedImage],
   templateUrl: './demo.component.html',
   styleUrl: './demo.component.scss',
 })

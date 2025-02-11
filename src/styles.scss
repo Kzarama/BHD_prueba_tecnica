@@ -1,6 +1,25 @@
+@use "@angular/material" as mat;
+
+* {
+  box-sizing: border-box;
+  font-family: "TrebuchetMS";
+}
+
 html {
   margin: 0;
   padding: 0;
+
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
 }
 
 body {
@@ -9,11 +28,12 @@ body {
 
   max-width: 375px;
   height: 812px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "TrebuchetMS";
+html,
+body {
+  height: 100%;
 }
 
 @font-face {
@@ -21,4 +41,24 @@ body {
   src: url(assets/fonts/TrebuchetMS.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
+}
+
+.error-snack {
+  .mdc-snackbar__surface {
+    background: red !important;
+  }
+
+  span {
+    color: white;
+  }
+}
+
+.success-snack {
+  .mdc-snackbar__surface {
+    background: green !important;
+  }
+
+  span {
+    color: white;
+  }
 }

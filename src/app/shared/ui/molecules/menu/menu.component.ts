@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -17,7 +18,7 @@ import { LogoComponent } from '../../atoms/logo/logo.component';
 
 @Component({
   selector: 'app-menu',
-  imports: [LogoComponent, RouterLink, ButtonComponent],
+  imports: [LogoComponent, RouterLink, ButtonComponent, NgOptimizedImage],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
